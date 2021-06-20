@@ -11,11 +11,13 @@
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
+\usepackage{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
+\graphicspath{ {./} }
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -73,6 +75,8 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
+
 %-----------------------------
 %%%%%%  CV STARTS HERE  %%%%%%
 
@@ -80,11 +84,16 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Mohammad Montasim -Al- Mamun Shuvo}} \\ \\
+  \textbf{{\LARGE Mohammad Montasim -Al- Mamun Shuvo}} \\
+  \textbf{{\SMALL Developer and Designer}}\\ \\ \\
   \href{mailto:montasimmamun@gmail.com}{Email ~~~~~:~~montasimmamun@gmail.com} \\
   \href{https://montasim.github.io}{Portfolio \hspace{1.6mm}:~~montasim.github.io} \\ 
   Mobile \hspace{4.5mm}:~~+8801722815469 \\
   \href{https://github.com/montasim}{Github \hspace{4.1mm}:~~github.com/montasim} \\
+  
+  \hspace{15 cm}
+  \smash{\fbox{\includegraphics[width=3.1cm]{montasim.png}}}
+  
 \end{tabular*}
 
 \vspace{15pt}
@@ -92,7 +101,9 @@
 %-----------Career Objective-----------------
 \section{~~Career Objective}
   \resumeSubHeadingListStart
-    {I want to make difference and willing to work hard for skillful career rather than regular career that I can be satisfied for. I want to work hard, be responsible and improve my profession and skills with a reputed organization in an ethical way in order to accept challenges.}
+  \item[]
+    {I want to make difference and willing to work hard for a skillful career rather than a regular career that I can be satisfied with. I want to work hard, be responsible and improve my profession and skills with a reputed organization in an ethical way to accept challenges.}
+    
   \resumeSubHeadingListEnd
     
 \vspace{5pt}
@@ -104,38 +115,39 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Bachelor of Science in Computer Science and Engineering (CSE) }{2016 - 2021}
-      {Bangladesh Army University of Science and Technology (BAUST)}{}
+      {Bangladesh Army University of Science and Technology (BAUST)}{2.96 out of 4.00 (CGPA)}
       
       \vspace{5pt}
     
     %-----------HSC EDUCATION-----------------
     \resumeSubheading
       {Higher Secondary Certificate (HSC)}{2014 - 2016}
-      {Carmichael College Rangpur}{}
+      {Carmichael College Rangpur}{4.58 out of 5.00 (GPA)}
       
       \vspace{5pt}
 
     %-----------SSC EDUCATION-----------------
     \resumeSubheading
       {Secondary School Certificate (SSC)}{2006 - 2014}
-      {Rangpur Zilla School}{}
+      {Rangpur Zilla School}{5.00 out of 5.00 (GPA)}
     \resumeSubHeadingListEnd
 
-    
+
 \vspace{5pt}
 
-\begin{comment}
+
 %-----------Thesis-----------------
 \section{~~Thesis}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Undergraduate Project}{} 
-      \hfill \break
-      { Hand Keypoint Detection in Single Images using Multiview Bootstrapping.}
+      {Undergraduate Thesis and Project:}{Hand pose estimation in single RGB image with Multiview Bootstrapping.}
+      \break{} 
+      \textbf{Tech:}{ Deep Learning, OpenCV, Convolutional Neural Network (CNN), Python}
     \resumeSubHeadingListEnd
     
 \vspace{5pt}
 
+\begin{comment}
 %-----------Publications
 \section{Publications}
 \resumeSubHeadingListStart
@@ -177,7 +189,7 @@
 \resumeSubHeadingListStart
 \resumeSubItem{Undergraduate Project}{Hand Keypoint Detection in Single Images using Multiview Bootstrapping.
 \newline
-\textbf{Tech:} Python}
+\textbf{Tech:} Deep Learning, OpenCV, Convolutional Neural Network (CNN), Python}
 
 \vspace{2pt}
 \resumeSubItem{Employee Management System}{A simple Employee Management System website. With this website a company can maintain their employees. Employee can request leave from this website. Admin can manage all employees from here. 
@@ -300,10 +312,12 @@
 %-----------Personal Information-----------------
 \section{Personal Information}
     \resumeSubHeadingListStart
+        \item[]
+        
         \begin{tabular}{l l}
             \textbf{Father's Name} \hspace{10.5mm} : \hspace{2mm} MD. Hafizar Rahman \\
-            \textbf{Mother's Name} \hspace{8.9mm} : \hspace{2mm} MST. Mozida Begum \\
-            \textbf{Parmanent Address} \hspace{1.5mm} : \hspace{2mm} Balapara 20 Mega Watt, Rangpur Sadar, Rangpur \\
+            \textbf{Mother's Name} \hspace{8.9mm} : \hspace{2mm} MST. Majida Begum \\
+            \textbf{Parmanent Address} \hspace{1.5mm} : \hspace{2mm} Balapara 20 Mega Watt, Rangpur Sadar, Rangpur, Bangladesh \\
             \textbf{Date of Birth} \hspace{12.6mm} : \hspace{2mm} 16 December 1998 \\
             \textbf{Nationality} \hspace{16.6mm} : \hspace{2mm} Bangladeshi \\
             \textbf{Gender} \hspace{23.4mm} : \hspace{2mm} Male \\
@@ -318,21 +332,23 @@
 %-----------References-----------------
 \section{~~References}
   \resumeSubHeadingListStart
+    \item[]
+    
     \resumeSubheading
       {Professor Dr. Md. Mamunur Rashid}{} 
       {Dean, Faculty of Electrical and Computer Engineering (ECE)}{} 
       \hfill \break
       {Bangladesh Army University of Science and Technology (BAUST)
       \newline
-      Mobile: +8801769675558, Email: hdcse@baust.edu.bd \DontPrintColon}
-      
+      Mobile: +8801769675558, Email: hdcse@baust.edu.bd}
+    
     \resumeSubheading
       {Abu Saleh Musa Miah}{} 
       {Lecturer, Computer Science and Engineering (CSE)}{} 
       \hfill \break
       {Bangladesh Army University of Science and Technology (BAUST)
       \newline
-      Mobile: +8801734264899, Email: abusalehcse.ru@gmail.com \DontPrintColon}
+      Mobile: +8801734264899, Email: abusalehcse.ru@gmail.com}
   \resumeSubHeadingListEnd
 
 \end{document}
